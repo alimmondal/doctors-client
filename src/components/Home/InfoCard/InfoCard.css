@@ -1,0 +1,26 @@
+.info-card{
+    padding: 0 5px;
+    /* margin: 0 -20px; */
+}
+
+.info-primary{
+    background-color: #1CC7C1;
+}
+.info-dark{
+    background-color: #3A4256;
+}
+
+.info-container{
+    height: 100px;
+    padding: 30px;
+    margin: 20px;
+}
+.info-icon{
+    font-size: 3em;
+}
+
+@media (max-width:760px) {
+    .info-card {
+        display: none;
+    }
+}
