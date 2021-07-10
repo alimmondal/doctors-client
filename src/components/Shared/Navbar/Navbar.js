@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import {Link} from "react-router-dom";
+import { UserContext } from '../../../App';
 import './Navbar.css'
 
 const Navbar = () => {
+    const [loggedInUser, setLoggedInUser] = useContext (UserContext);
+
 
     // const [navbar, setNavbar] = useState(false);
 
@@ -34,23 +37,25 @@ const Navbar = () => {
                 <li className="nav-item">
                     <Link className="nav-link ms-2 text-primary" to="/appointment">Appointment</Link>
                 </li>
+                
                 <li className="nav-item">
-                    <Link className="nav-link ms-2 text-primary" to="/loginPage">Login</Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link ms-2 text-primary" to="/#">Dashboard</Link>
+                    <Link className="nav-link ms-2 text-primary" to="/dashboard">Dashboard</Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link ms-2 text-primary" to="/#">Admin</Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link ms-2 text-primary" to="/#">Reviews</Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link ms-2 text-primary" to="#">Blogs</Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link ms-2 text-primary" to="/contactUs">Contact Us</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link ms-2 text-primary" to="/loginPage">Login</Link>
+                </li> 
+                
+                <li className="nav-item">
+                    <Link style={{border: '1px solid lightGray'}} className="nav-link ms-2 text-primary" to="/#">{loggedInUser.name}</Link>
                 </li>
             </ul>
         </div>

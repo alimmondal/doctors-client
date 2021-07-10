@@ -23,7 +23,7 @@ const AppointmentForm = ({modalIsOpen, closeModal, appointmentOn, date}) => {
 
 
     const onSubmit = data => {
-        console.log(data)
+        // console.log(data)
         data.service = appointmentOn;
         data.date = date;
         data.created = new Date();
@@ -31,7 +31,7 @@ const AppointmentForm = ({modalIsOpen, closeModal, appointmentOn, date}) => {
         fetch('http://localhost:5000/addAppointment', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({data})
+            body: JSON.stringify(data)
         })
         .then(res => res.json())
         .then(success => {
@@ -84,7 +84,7 @@ const AppointmentForm = ({modalIsOpen, closeModal, appointmentOn, date}) => {
                             
                         </div>
                         <div className="col-4">
-                            <input {...register("weight")} className="form-control" name="weight" placeholder="Weight" type="number" />
+                            <input {...register("time")} className="form-control" name="time" placeholder="Visiting Time" type="text" />
                             
                         </div>
                     </div>

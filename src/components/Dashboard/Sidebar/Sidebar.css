@@ -1,0 +1,30 @@
+.sidebar{
+    /* background-image: linear-gradient(40deg, #19d3ae,#0fcfec); */
+    background: linear-gradient(40deg, #19d3ae,#0fcfec);
+    position: fixed;
+    top: 130px;
+    bottom: 500px;
+    overflow: hidden;
+}
+.sidebar li{
+    margin-bottom: 0.5em;
+}
+.sidebar li:hover span{
+    display: inline-block;
+    transform: translate(5px);
+}
+.sidebar svg{
+    margin-right: 5px;
+}
+@media (max-width:768px){
+    .sidebar{
+        background: goldenrod;
+        position:sticky;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        width: 50em;
+    }
+}
