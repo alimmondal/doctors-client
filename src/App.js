@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import './App.css';
 import Appointment from "./components/Appointment/Appointment/Appointment";
@@ -14,8 +13,9 @@ import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
 import AllPatients from "./components/AllPatients/AllPatients";
 import AddDoctor from "./components/AddDoctor/AddDoctor";
 import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
-import Login from "./components/Login/Login/Login";
+// import Login from "./components/Login/Login/Login";
 import Setting from "./components/Dashboard/Setting/Setting";
+import BlogDetail from "./components/Home/BlogDetail/BlogDetail";
 
 
 export const UserContext = createContext();
@@ -28,6 +28,9 @@ function App() {
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
         <Switch>
+          <Route path="/blogDetail">
+            <BlogDetail></BlogDetail>
+          </Route>
           <PrivateRoute path="/dashboard">
             <Dashboard></Dashboard>
           </PrivateRoute>

@@ -1,0 +1,8 @@
+.headerMHeight{
+    height: 600px;
+}
+@media (max-width:768px) {
+    .headerMHeight{
+        height: 400px;
+    }
+}

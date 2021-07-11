@@ -20,7 +20,9 @@
 }
 
 @media (max-width:760px) {
-    .info-card {
-        display: none;
-    }
+    .info-container {
+        height: 80px;
+        padding: 20px;
+        margin: 10px;
+        }
 }

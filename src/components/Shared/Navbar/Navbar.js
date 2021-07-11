@@ -1,11 +1,11 @@
 import React, { useContext, useState } from 'react';
 import {Link} from "react-router-dom";
 import { UserContext } from '../../../App';
-import './Navbar.css'
+import './Navbar.css';
+import logo from '../../../images/teathLogo.png';
 
 const Navbar = () => {
     const [loggedInUser, setLoggedInUser] = useContext (UserContext);
-
 
     // const [navbar, setNavbar] = useState(false);
 
@@ -25,7 +25,7 @@ const Navbar = () => {
         <nav className="container navbar navbar-expand-lg navbar-light">
         <div className="container container-fluid navbar-container">
         <Link className="logo" to='/'>
-            {/* <img src={logo} alt="" width="30" height="24" class="d-inline-block align-text-top" /> */}
+            <img src={logo} alt="" width="36" height="30" class="d-inline-block align-text-top" />
            <span className="logoText">iDental</span> 
         </Link>
 
@@ -45,17 +45,17 @@ const Navbar = () => {
                     <Link className="nav-link ms-2 text-primary" to="/#">Admin</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link ms-2 text-primary" to="#">Blogs</Link>
+                    <Link className="nav-link ms-2 text-secondary" to="blogDetail">Blogs</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link ms-2 text-primary" to="/contactUs">Contact Us</Link>
+                    <Link className="nav-link ms-2 text-secondary" to="/contactUs">Contact Us</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link ms-2 text-primary" to="/loginPage">Login</Link>
+                    <Link className="nav-link ms-2 text-secondary" to="/loginPage">Login</Link>
                 </li> 
                 
                 <li className="nav-item">
-                    <Link style={{border: '1px solid lightGray'}} className="nav-link ms-2 text-primary" to="/#">{loggedInUser.name}</Link>
+                    <Link style={{border: '1px solid lightGray'}} className="nav-link ms-2 text-secondary" to="/#">{loggedInUser.name}</Link>
                 </li>
             </ul>
         </div>

@@ -36,9 +36,9 @@ const Footer = () => {
         {name: "Check Up" , link: "/checkup"}
     ]
     return (
-        <footer className="pb-5 footer-area clear-both">
-            <div className="container pt-5">
-                <div className="row py-5">
+        <footer className="py-3 mt-5 footer-area clear-both">
+            <div className="container ">
+                <div className="row py-3">
                     <FooterCol key={1} menuTitle={"."} menuItems={noNamed}/>
                     <FooterCol key={2} menuTitle="Services" menuItems={services}/>
                     <FooterCol key={3} menuTitle="Oral Health" menuItems={oralHealth}/>

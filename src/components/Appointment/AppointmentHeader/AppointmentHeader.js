@@ -15,7 +15,7 @@ const AppointmentHeader = ({ handleDateChange }) => {
                     <img src={chair} alt="" className="img-fluid" />
                 </div>
                 <div className="col-md-4 mt-4  offset-md-1">
-                    <p className="text-brand">Choose date before select services:</p>
+                    <p className="text-danger">Choose date before selecting services:</p>
                     <Calendar
                         onChange={handleDateChange}
                         value={new Date()}

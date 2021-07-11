@@ -41,7 +41,7 @@ const Login = () => {
 
   return (
     <div className="login-page container">
-      <div className="row align-items-center" style={{ height: "100vh" }}>
+      <div className="row align-items-center" >
         <div className="col-md-6 shadow p-5">
           <div className="form-group">
             <label htmlFor="">User Name</label>
