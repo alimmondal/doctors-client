@@ -7,6 +7,8 @@ import MakeAppointment from '../MakeAppointment/MakeAppointment';
 import Services from '../Services/Services';
 import Testimonials from '../Testimonials/Testimonials';
 import Footer from '../../Shared/Footer/Footer'
+import Subscription from '../Subscription/Subscription';
+
 
 const Home = () => {
     return (

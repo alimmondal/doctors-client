@@ -3,10 +3,13 @@ import './Footer.css';
 import FooterCol from '../FooterCol/FooterCol';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
+import logo from '../../../images/teathLogo.png';
+import Subscription from '../../Home/Subscription/Subscription';
 
 const Footer = () => {
+
     const noNamed = [
-        {name: "Emergency Dental Care" , link: "/emergency"},
+        {name: "Regular dental checkups help in detection of early warning signs of certain health related issues. Visit your dentists regularly and stay healthy." , link: "/emergency"},
         {name: "Check Up" , link: "/checkup"},
         {name: "Treatment of Personal Diseases" , link: "/personal-treatment"},
         {name: "Tooth Extraction" , link: "/tooth-extract"},
@@ -35,11 +38,12 @@ const Footer = () => {
         {name: "Check Up" , link: "/checkup"},
         {name: "Check Up" , link: "/checkup"}
     ]
+
     return (
         <footer className="py-3 mt-5 footer-area clear-both">
-            <div className="container ">
+            <div className="container">
                 <div className="row py-3">
-                    <FooterCol key={1} menuTitle={"."} menuItems={noNamed}/>
+                    <FooterCol key={1} menuTitle={"iDental"} menuItems={noNamed}/>
                     <FooterCol key={2} menuTitle="Services" menuItems={services}/>
                     <FooterCol key={3} menuTitle="Oral Health" menuItems={oralHealth}/>
                     <FooterCol key={4} menuTitle="Our Address" menuItems={ourAddress}> 
@@ -54,10 +58,12 @@ const Footer = () => {
                         </div>
                     </FooterCol>
                 </div>
+                <Subscription></Subscription>
                 <div className="copyRight text-center">
                     <p>Copyright {(new Date()).getFullYear()} All Rights Reserved</p>
                 </div>
             </div>
+            
         </footer>
         
     );
