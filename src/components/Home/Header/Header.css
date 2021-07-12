@@ -15,3 +15,8 @@
     background-color: #3B4053;
     z-index: -50;
 }
+@media (max-width:768px) {
+    .Header-container{
+        height: 60rem;
+    }
+}

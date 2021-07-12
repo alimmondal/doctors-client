@@ -1,5 +1,9 @@
-/* @media (max-width:768px) {
+/* .bInfo{
+    padding: 100px;
+}
+
+@media (max-width:768px) {
     .bInfo {
-        margin-bottom: 600px;
+        padding-top: 600px;
     }
 } */

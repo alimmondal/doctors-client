@@ -8,11 +8,9 @@
 }
 @media (max-width:768px) {
     .headerMHeight{
-        height: 400px;
+        height: 550px;
     }
-    .headerMHeight h1{
-        color: #1CC7C1;
-        font-size:40px;
-        font-weight: bold;
-    }
+    
 }
+
+
