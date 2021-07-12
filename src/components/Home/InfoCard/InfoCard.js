@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './InfoCard.css';
 const InfoCard = ({ info }) => {
   return (
-    <div className="col-md-4 text-white info-card">
+    <div className="col-md-4 col-sm-6 text-white info-card">
       <div className={`d-flex justify-content-center info-container info-${info.background}`}> 
-        <div className="me-3">
+        <div className="me-2">
           <FontAwesomeIcon className="info-icon" icon={info.icon}></FontAwesomeIcon>
         </div>
         <div>

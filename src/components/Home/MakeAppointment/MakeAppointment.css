@@ -14,7 +14,7 @@
     height: 100%;
     position: absolute;
     background: rgb(36, 41, 73);
-    opacity: .7;
+    opacity: .5;
     top: 0;
 }
 
@@ -25,3 +25,5 @@
 .desCol{
     z-index: 999;
 }
+
+
