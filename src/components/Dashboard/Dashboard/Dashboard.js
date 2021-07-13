@@ -25,7 +25,7 @@ const Dashboard = () => {
     }
 
     useEffect(() => {
-        fetch('http://localhost:5000/appointmentsByDate', {
+        fetch('http://localhost:5000/byDateAppointments', {
             method: 'POST',
             headers: { 'Content-type': 'application/json' },
             body: JSON.stringify({ date: selectedDate, email: loggedInUser.email })

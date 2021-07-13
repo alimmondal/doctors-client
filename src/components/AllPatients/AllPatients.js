@@ -7,7 +7,7 @@ const AllPatients = () => {
     const [appointments, setAppointments] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/appointments')
+        fetch('http://localhost:5000/postAppointments')
             .then(res => res.json())
             .then(data => setAppointments(data))
     }, [])

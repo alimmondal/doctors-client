@@ -9,16 +9,16 @@ import { UserContext } from '../../../App';
 
 const Sidebar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-    const [isDoctor, setIsDoctor] = useState(false);
+    const [isAdmins, setIsAdmins] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost:5000/isDoctor', {
+        fetch('http://localhost:5000/isAdmins', {
             method: 'POST',
             headers: { 'Content-type': 'application/json' },
             body: JSON.stringify({ email: loggedInUser.email })
         })
             .then(res => res.json())
-            .then(data => setIsDoctor(data));
+            .then(data => setIsAdmins(data));
 
     }, [])
 
@@ -40,18 +40,14 @@ const Sidebar = () => {
                         <FontAwesomeIcon icon={faCalendar} /> <span>Appointment</span>
                     </Link>
                 </li>
-                {isDoctor && <div>
+                {isAdmins && <div>
 
                     <li>
                         <Link to="/AllPatients" className="text-white">
                             <FontAwesomeIcon icon={faUsers} /> <span>Patients</span>
                         </Link>
                     </li>
-                    <li>
-                        <Link to="/doctor/prescriptions" className="text-white">
-                            <FontAwesomeIcon icon={faFileAlt} /> <span>Prescriptions</span>
-                        </Link>
-                    </li>
+
                     <li>
                         <Link to="/addDoctor" className="text-white">
                             <FontAwesomeIcon icon={faFileAlt} /> <span>Add Doctor</span>
@@ -63,7 +59,11 @@ const Sidebar = () => {
                         <FontAwesomeIcon icon={faCog} /> <span>Setting</span>
                     </Link>
                 </li>
-
+                <li>
+                    <Link to="/doctor/prescriptions" className="text-white">
+                        <FontAwesomeIcon icon={faFileAlt} /> <span>Prescriptions</span>
+                    </Link>
+                </li>
 
             </ul>
             <div>

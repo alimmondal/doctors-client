@@ -34,7 +34,7 @@ const AddDoctor = () => {
         formData.append('phone', info.phone);
         formData.append('email', info.email);
 
-        fetch('http://localhost:5000/addADoctor', {
+        fetch('http://localhost:5000/addAnAdmin', {
             method: 'POST',
             body: formData
         })
