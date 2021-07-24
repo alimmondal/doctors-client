@@ -36,9 +36,9 @@ const Dashboard = () => {
 
 
     return (
-        <section>
+        <section className="mt-5 pt-5">
             <Navbar></Navbar>
-            <div style={containerStyle}>
+            <div style={containerStyle} >
                 <div className="container-fluid">
                     <div className="row py-5">
                         <div className="col-md-2">

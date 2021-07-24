@@ -1,5 +1,5 @@
 .headerMHeight{
-    height: 600px;
+    height: 700px;
 }
 .headerMHeight h1{
     color: #464C5E;
@@ -9,6 +9,7 @@
 @media (max-width:768px) {
     .headerMHeight{
         height: 550px;
+        padding-top: 50px;
     }
     
 }

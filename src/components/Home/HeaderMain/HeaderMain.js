@@ -46,7 +46,7 @@ const HeaderMain = () => {
           <animated.h1 style={styles}>Your New Smile <br /> Starts Here </animated.h1>
           <p className="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora accusamus autem explicabo nulla dolor exercitationem.</p>
           <Link to="/appointment">
-            <button className="btn btn-brand">GET APPOINTMENT</button>
+            <button className="bt-brand">GET APPOINTMENT</button>
           </Link>
         </div>
         <div className={`col-md-7 flex fill ${styles.containers}`} >

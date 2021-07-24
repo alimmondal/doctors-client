@@ -25,6 +25,11 @@ const Sidebar = () => {
     return (
         <div className="sidebar d-flex flex-column justify-content-center py-5 px-4" style={{ height: "24em", width: '12em' }}>
             <ul className="list-unstyled">
+            <li>
+                    <Link to="/" className="text-white">
+                        <FontAwesomeIcon icon={faGripHorizontal} /> <span>Hi !{loggedInUser.name}</span>
+                    </Link>
+                </li>
                 <li>
                     <Link to="/" className="text-white">
                         <FontAwesomeIcon icon={faGripHorizontal} /> <span>Home</span>

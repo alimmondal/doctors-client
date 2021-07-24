@@ -44,7 +44,9 @@ const AppointmentForm = ({modalIsOpen, closeModal, appointmentOn, date}) => {
     }
 
     return (
-        <div>
+        <div className="container">
+        <div className="row text-center">
+        <div className="col-md-4">
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
@@ -94,6 +96,8 @@ const AppointmentForm = ({modalIsOpen, closeModal, appointmentOn, date}) => {
                     
             </form>
         </Modal>
+        </div>
+        </div>
         </div>
     );
 };

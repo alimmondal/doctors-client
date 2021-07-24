@@ -39,7 +39,7 @@ const MakeAppointment = () => {
                                     <h1 className="my-4">Make an Appointment <br /> Today</h1>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque magnam ad consequuntur assumenda saepe hic amet nemo ea facere a!</p>
                                     <Link to="/contactUS">
-                                        <button className="btn btn-primary">Learn More</button>
+                                        <button className="bt-brand">Learn More</button>
                                     </Link>
                                 </div>
                             </div>

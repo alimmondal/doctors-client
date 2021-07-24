@@ -17,13 +17,13 @@ const AppointmentHeader = ({ handleDateChange }) => {
 
     return (
         <main className="container mt-5">
-            <div className="row d-flex align-items-center">
+            <div className="row">
             
                 <animated.div style={{...styles}} className="col-md-6">
                 <h1 style={{ color: '#3A4256' }}>Appointment</h1>
                     <img src={chair} alt="" className="img-fluid" />
                 </animated.div>
-                <div className="col-md-4 mt-4  offset-md-1">
+                <div className="col-md-4 offset-md-1  mt-4  ">
                     <p className="text-danger">Choose date before selecting services:</p>
                     <Calendar
                         onChange={handleDateChange}
