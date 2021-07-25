@@ -16,6 +16,9 @@ import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
 // import Login from "./components/Login/Login/Login";
 import Setting from "./components/Dashboard/Setting/Setting";
 import BlogDetail from "./components/Home/BlogDetail/BlogDetail";
+import Prescriptions from "./components/Dashboard/Prescriptions/Prescriptions";
+import SignUp from "./components/Login/SignUp/SignUp";
+import SignUpPage from "./components/Login/SignUpPage/SignUpPage";
 
 
 export const UserContext = createContext();
@@ -28,6 +31,9 @@ function App() {
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
         <Switch>
+          <Route path="/pres">
+            <Prescriptions></Prescriptions>
+          </Route>
           <Route path="/blogDetail">
             <BlogDetail></BlogDetail>
           </Route>
@@ -42,6 +48,9 @@ function App() {
           </Route>
           <Route path="/loginPage">
             <LoginPage></LoginPage>
+          </Route>
+          <Route path="/signUpPage">
+            <SignUpPage></SignUpPage>
           </Route>
           <Route path="/setting">
             <Setting></Setting>

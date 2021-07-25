@@ -11,9 +11,12 @@ const ContactUs = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className="my-5">
+            <div className="mt-5 pt-4">
+                <div className="bg-light py-5 text-center">
+                    <h1>Contact Us</h1>
+                </div>
                 <div className="">
-                    <div className="">
+                    <div className="mt-5">
                         <BusinessInfo></BusinessInfo>
                     </div>
                     <div className="">

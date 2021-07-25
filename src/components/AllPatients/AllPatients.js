@@ -15,7 +15,7 @@ const AllPatients = () => {
     return (
         <div  className="" >
             <Navbar></Navbar>
-            <div style={{ backgroundColor: "#F4FDFB" }} className="">
+            <div style={{ backgroundColor: "#F4FDFB", marginTop: '80px'  }} className="">
                 <div className="container-fluid">
                     <div className="row py-5">
                         <div className="col-md-2">

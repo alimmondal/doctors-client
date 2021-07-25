@@ -11,6 +11,7 @@ import AppointByDate from '../AppointByDate/AppointByDate';
 const containerStyle = {
     backgroundColor: '#F4FDFB',
     height: '100%',
+    marginTop: '80px'
     // height:'100vh'
 }
 
@@ -36,7 +37,7 @@ const Dashboard = () => {
 
 
     return (
-        <section className="mt-5 pt-5">
+        <section className="">
             <Navbar></Navbar>
             <div style={containerStyle} >
                 <div className="container-fluid">

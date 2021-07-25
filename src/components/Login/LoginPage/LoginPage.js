@@ -4,7 +4,7 @@ import Login from '../Login/Login';
 
 const LoginPage = () => {
     return (
-        <div>
+        <div className="pt-5 mt-4">
             <Navbar></Navbar>
             <Login></Login>
         </div>

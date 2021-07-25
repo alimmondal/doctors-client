@@ -51,9 +51,9 @@ const AddDoctor = () => {
     return (
         <section className="  ">
             <Navbar></Navbar>
-            <div style={{ backgroundColor: "#F4FDFB" }} className="">
-                <div className="container-fluid">
-                    <div className="row py-5">
+            <div style={{ backgroundColor: "#F4FDFB", marginTop: '80px' }} className=" mt-">
+                <div className="container-fluid pt-5">
+                    <div className="row">
                         <div className="col-md-2">
                             <Sidebar></Sidebar>
                         </div>

@@ -7,7 +7,7 @@ const Button = () => {
     return (
         <div>
             <Link to='/loginPage'>
-                <button className="btn">Sign Up</button>
+                <button className="btn">Sign In</button>
             </Link>
         </div>
     );
