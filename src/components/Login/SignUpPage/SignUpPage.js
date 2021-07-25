@@ -8,7 +8,7 @@ const SignUpPage = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className="container pt-5 mt-5">
+            <div className="container pt-5 mt-5 ">
                 <div className="row align-items-center">
                     <div className="col-md-6 h-25 shadow p-5 border border-primary rounded">
                         <SignUp></SignUp>

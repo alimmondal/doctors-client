@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Button from './Button';
 import Dropdown from './Dropdown';
 import './Navbar.css';
-import logo from '../../../images/teathLogo.png'
+import logo from '../../../images/teathLogo 1.png'
 import { UserContext } from '../../../App';
 
 const Navbar = () => {

@@ -1,6 +1,6 @@
 export const MenuItems = [
     {
-        title: 'Prescriptions',
+        title: 'Our Doctors',
         path: '/pres',
         cName: 'dropdowns-link'
     },
@@ -10,7 +10,7 @@ export const MenuItems = [
         cName: 'dropdowns-link'
     },
     {
-        title: 'Doctors',
+        title: 'Prescriptions',
         path: '/pres',
         cName: 'dropdowns-link'
     },

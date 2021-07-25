@@ -90,7 +90,7 @@ const SignUp = () => {
                 <br />
                 <input type="password" onBlur={handleBlur} name="password" placeholder="Password" id="" required className="form-control"/>
                 <br />
-                <input type="submit" value="Sign Up" className="btn btn-brand " />
+                <input type="submit" value="Sign Up" className="bt-brand " />
 
 
             </form>

@@ -58,22 +58,23 @@ const Login = () => {
       .auth()
       .signInWithPopup(fbProvider)
       .then((result) => {
-        // const newUserInfo = { ...user };
-        //     newUserInfo.error = '';
-        //     newUserInfo.success = true;
-        //     setUser(newUserInfo);
-        //     setLoggedInUser(newUserInfo);
-        var credential = result.credential;
-        var user = result.user;
-        var accessToken = credential.accessToken;
+        const newUserInfo = { ...user };
+        newUserInfo.error = '';
+        newUserInfo.success = true;
+        setUser(newUserInfo);
+        setLoggedInUser(newUserInfo);
+        // var credential = result.credential;
+        // var user = result.user;
+        // var accessToken = credential.accessToken;
         history.replace(from);
-        console.log(result.user)
+        // console.log(result.user)
       })
       .catch((error) => {
         var errorCode = error.code;
         var errorMessage = error.message;
         var email = error.email;
         var credential = error.credential;
+        console.log(errorCode, errorMessage, email, credential);
       });
   }
 
@@ -155,7 +156,7 @@ const Login = () => {
             <input type="email" onBlur={handleBlur} name="email" placeholder="your email address" id="" required className="form-control" />
             <br />
             <input type="password" onBlur={handleBlur} name="password" placeholder="Password" id="" required className="form-control" />
-           
+
             <div className="form-group">
               <label htmlFor="" className="text-danger">Forgot your password?</label>
             </div>
@@ -173,15 +174,15 @@ const Login = () => {
             <p>Don't have an account? Sign Up</p>
           </Link>
 
-          <div className="from-group ">
+          <div className="from-group">
             <h3>Easy Sign In:</h3>
             {
               user.isSignedIn ? <button onClick={handleGoogleSignOut}>Sign Out</button> :
-                <button className="btn btn-brand" onClick={handleGoogleSignIn}>Sign In With Google</button>
+                <button className="bt-brand" onClick={handleGoogleSignIn}>Sign In With Google</button>
             }
             <br />
             <br />
-            <button className="btn btn-brand" onClick={handleFbSignIn}>Sign In Using Facebook</button>
+            <button className="bt-brand" onClick={handleFbSignIn}>Sign In Using Facebook</button>
 
             {
               user.isSignedIn && <div>
