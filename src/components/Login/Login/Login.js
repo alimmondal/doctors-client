@@ -161,7 +161,8 @@ const Login = () => {
               <label htmlFor="" className="text-danger">Forgot your password?</label>
             </div>
             <div className="form-group">
-              <input type="submit" value="Sign In" className="btn btn-brand " />
+              {/* <input type="submit" value="Sign In" className="bt-brand " /> */}
+              <button type="submit" className="bt-brand"><i class="fas fa-sign-in-alt me-2 text-white"></i>Sign In</button>
             </div>
           </form>
 
@@ -174,15 +175,15 @@ const Login = () => {
             <p>Don't have an account? Sign Up</p>
           </Link>
 
-          <div className="from-group">
+          <div className="from-group ">
             <h3>Easy Sign In:</h3>
             {
               user.isSignedIn ? <button onClick={handleGoogleSignOut}>Sign Out</button> :
-                <button className="bt-brand" onClick={handleGoogleSignIn}>Sign In With Google</button>
+                <button className="bt-brand" onClick={handleGoogleSignIn}><i class="fab fa-google text-white  p-2 me-2 App-logo" />Sign In With Google</button>
             }
             <br />
             <br />
-            <button className="bt-brand" onClick={handleFbSignIn}>Sign In Using Facebook</button>
+            <button className="bt-brand" onClick={handleFbSignIn}><i class="fab fa-facebook text-white  p-2 me-2 App-logo" />Sign In Using Facebook</button>
 
             {
               user.isSignedIn && <div>

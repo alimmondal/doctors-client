@@ -19,6 +19,8 @@ import BlogDetail from "./components/Home/BlogDetail/BlogDetail";
 import Prescriptions from "./components/Dashboard/Prescriptions/Prescriptions";
 import SignUp from "./components/Login/SignUp/SignUp";
 import SignUpPage from "./components/Login/SignUpPage/SignUpPage";
+import OurDoctors from "./components/DropdownPages/OurDoctors/OurDoctors";
+import Consulting from "./components/DropdownPages/Consulting/Consulting";
 
 
 export const UserContext = createContext();
@@ -31,6 +33,12 @@ function App() {
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
         <Switch>
+          <Route path="/consulting">
+            <Consulting></Consulting>
+          </Route>
+          <Route path="/ourDoctors">
+            <OurDoctors></OurDoctors>
+          </Route>
           <Route path="/pres">
             <Prescriptions></Prescriptions>
           </Route>

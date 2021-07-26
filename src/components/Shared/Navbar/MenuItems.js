@@ -1,12 +1,12 @@
 export const MenuItems = [
     {
         title: 'Our Doctors',
-        path: '/pres',
+        path: '/ourDoctors',
         cName: 'dropdowns-link'
     },
     {
         title: 'Consulting',
-        path: '/press',
+        path: '/consulting',
         cName: 'dropdowns-link'
     },
     {

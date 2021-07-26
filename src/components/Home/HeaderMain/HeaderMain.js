@@ -5,7 +5,10 @@ import './HeaderMain.css';
 import { useSpring, animated, config } from 'react-spring';
 // import React, { useState, useCallback, CSSProperties, useEffect } from 'react'
 import { useTransition, AnimatedProps, useSpringRef } from '@react-spring/web';
-import styles from './styles.module.css'
+import styles from './styles.module.css';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const pages = [
   ({ style }) => <animated.div style={{ ...style, background: 'lightpink' }}><img src={chair} alt="" className="img-fluid" /></animated.div>,
@@ -38,13 +41,20 @@ const HeaderMain = () => {
     transRef.start()
   }, [index])
 
+  useEffect(() => {
+    AOS.init({
+        offset: 100,
+        duration: 3000,
+        easing: 'ease',
+    });
+})
 
   return (
     <div className="container">
       <div className="row de-flex align-items-center headerMHeight">
         <div className="col-md-5 py-3">
           <animated.h1 style={styles}>Your New Smile <br /> Starts Here </animated.h1>
-          <p className="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora accusamus autem explicabo nulla dolor exercitationem.</p>
+          <p className="text-secondary" data-aos='flip-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora accusamus autem explicabo nulla dolor exercitationem.</p>
           <Link to="/appointment">
             <button className="bt-brand">GET APPOINTMENT</button>
           </Link>

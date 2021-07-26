@@ -89,9 +89,8 @@ const SignUp = () => {
                 <input type="email" onBlur={handleBlur} name="email" placeholder="your email address" id="" required className="form-control"/>
                 <br />
                 <input type="password" onBlur={handleBlur} name="password" placeholder="Password" id="" required className="form-control"/>
-                <br />
+                <br /><i class="fas fa-user-plus "></i>
                 <input type="submit" value="Sign Up" className="bt-brand " />
-
 
             </form>
             <p style={{ color: 'red' }}>{user.error}</p>

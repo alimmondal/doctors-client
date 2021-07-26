@@ -39,7 +39,7 @@ const BlogDetail = () => {
                 <div className="mt-5">
                     <div className="text-center bg-light py-5">
                         <h1>Blog</h1>
-                        <h1>From Our Blog News</h1>
+                        <p>From Our Blog News</p>
                     </div>
                     <div className="text-center mt-5">
 
