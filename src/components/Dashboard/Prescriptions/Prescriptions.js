@@ -3,7 +3,7 @@ import Navbar from '../../Shared/Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
 
 const Prescriptions = () => {
-    
+    document.title="prescriptions";
     return (
         <div>
             <Navbar></Navbar>

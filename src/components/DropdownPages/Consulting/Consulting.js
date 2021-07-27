@@ -3,6 +3,7 @@ import Navbar from '../../Shared/Navbar/Navbar';
 import './Consulting.css'
 
 const Consulting = () => {
+    document.title="consulting";
     return (
         <div>
             <Navbar></Navbar>

@@ -3,6 +3,7 @@ import Navbar from '../../Shared/Navbar/Navbar';
 import './OurDoctors.css'
 
 const OurDoctors = () => {
+    document.title="Our-Doctors";
     return (
         <div>
             <Navbar></Navbar>

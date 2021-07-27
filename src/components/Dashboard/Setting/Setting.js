@@ -3,6 +3,9 @@ import Navbar from '../../Shared/Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
 
 const Setting = () => {
+
+    document.title="settings";
+
     return (
         <div>
             <Navbar></Navbar>

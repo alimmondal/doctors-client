@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
 
+  document.title="login";
   const [user, setUser] = useState({
     isSignedIn: false,
     name: '',

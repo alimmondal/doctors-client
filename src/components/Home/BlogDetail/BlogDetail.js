@@ -7,6 +7,8 @@ import hero from '../../../images/chair.png';
 
 const BlogDetail = () => {
 
+    document.title="blog";
+
     const blogData = [
         {
             title: 'Check at least a doctor in a year for your teeth',

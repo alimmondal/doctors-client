@@ -8,6 +8,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 const ContactUs = () => {
+
+    document.title="contact";
+
     return (
         <div>
             <Navbar></Navbar>

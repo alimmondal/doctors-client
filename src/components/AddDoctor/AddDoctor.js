@@ -9,9 +9,10 @@ const containerStyle = {
 }
 
 const AddDoctor = () => {
+
     const [info, setInfo] = useState({});
     const [file, setFile] = useState(null);
-
+    document.title="Add-Doctors";
 
     const handleBlur = e => {
         const newInfo = { ...info };

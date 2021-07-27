@@ -5,6 +5,7 @@ import Navbar from '../Shared/Navbar/Navbar';
 
 const AllPatients = () => {
     const [appointments, setAppointments] = useState([]);
+    document.title="all-patients";
 
     useEffect(() => {
         fetch('http://localhost:5000/postAppointments')

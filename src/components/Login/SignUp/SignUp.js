@@ -8,6 +8,7 @@ import { Link, useHistory, useLocation } from 'react-router-dom';
 const SignUp = () => {
     let history = useHistory();
     let location = useLocation();
+    document.title="signUp";
   
     let { from } = location.state || { from: { pathname: "/loginPage" } };
 

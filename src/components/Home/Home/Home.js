@@ -11,6 +11,9 @@ import Subscription from '../Subscription/Subscription';
 
 
 const Home = () => {
+    
+    document.title="iDental";
+
     return (
         <div>
             <Header></Header>
