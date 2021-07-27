@@ -20,9 +20,11 @@
     /* cursor: pointer; */
     line-height: 50px;
   }
-  @media (max-width:768px) {
+  @media (max-width:960px) {
       .transitionsItem{
           font-size:1.6em;
           line-height: 20px;
+          /* width: 50%; */
+
       }
   }

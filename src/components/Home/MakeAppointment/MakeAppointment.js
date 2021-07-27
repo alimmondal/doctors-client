@@ -17,7 +17,7 @@ const MakeAppointment = () => {
     })
 
     return (
-        <section className=" ">
+        <section className="pt-5 mt-5 container">
             <div className={styles.container} onMouseOver={() => toggle(!state)}>
                 <animated.div
                     className={styles.text}

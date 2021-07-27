@@ -1,0 +1,24 @@
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 30px;
+    line-height: 1;
+    opacity: .75;
+    color: #292626 !important;
+    /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+}
+.slick-next{
+    right: 30px !important;
+    z-index: 100;
+}
+.slick-prev{
+    left: 30px !important;
+    z-index: 100;
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 10px !important;
+    /* color: goldenrod; */
+}

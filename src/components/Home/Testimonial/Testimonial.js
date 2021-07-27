@@ -16,12 +16,12 @@ const Testimonial = (props) => {
   return (
     <div className="card shadow " >
       <div className="card-body">
-        <p className="card-text text-center" data-aos='fade-left'>{quote}</p>
+        <p className="card-text text-center" data-aos='flip-down'>{quote}</p>
       </div>
       <div className="card-footer d-flex  align-items-center" data-aos='fade-right' >
         <img className="mx-3" src={img} alt="" width="60" />
         <div>
-          <h6 className="text-primary" data-aos='fade-right'>{name}</h6>
+          <h6 className="text-primary" >{name}</h6>
           <p className="m-0" data-aos='fade-right' >{from}</p>
         </div>
       </div>
