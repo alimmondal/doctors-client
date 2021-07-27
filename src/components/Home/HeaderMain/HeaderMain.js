@@ -3,7 +3,6 @@ import chair from '../../../images/chair.png';
 import { Link } from "react-router-dom";
 import './HeaderMain.css';
 import { useSpring, animated, config } from 'react-spring';
-// import React, { useState, useCallback, CSSProperties, useEffect } from 'react'
 import { useTransition, AnimatedProps, useSpringRef } from '@react-spring/web';
 import styles from './styles.module.css';
 
@@ -12,7 +11,6 @@ import 'aos/dist/aos.css';
 
 const pages = [
   ({ style }) => <animated.div style={{ ...style, background: 'lightpink' }}><img src={chair} alt="" className="img-fluid" /></animated.div>,
-
 ]
 
 const HeaderMain = () => {
@@ -25,6 +23,8 @@ const HeaderMain = () => {
     ],
     from: { opacity: 0, color: 'red' },
   })
+
+  const [loading, setLoading] = useState(true)
 
 
   const [index, set] = useState(0)
@@ -39,6 +39,7 @@ const HeaderMain = () => {
   })
   useEffect(() => {
     transRef.start()
+    setLoading(false);
   }, [index])
 
   useEffect(() => {
@@ -46,12 +47,15 @@ const HeaderMain = () => {
         offset: 100,
         duration: 3000,
         easing: 'ease',
+        
     });
-})
+    setLoading(false);
+},[])
 
   return (
     <div className="container">
-      <div className="row de-flex align-items-center headerMHeight">
+      { loading ? <p>loading......</p> :
+        <div className="row de-flex align-items-center headerMHeight">
         <div className="col-md-5 py-3">
           <animated.h1 style={styles}>Your New Smile <br /> Starts Here </animated.h1>
           <p className="text-secondary" data-aos='flip-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora accusamus autem explicabo nulla dolor exercitationem.</p>
@@ -66,6 +70,7 @@ const HeaderMain = () => {
           })}
         </div>
       </div>
+      }
     </div>
   );
 };
