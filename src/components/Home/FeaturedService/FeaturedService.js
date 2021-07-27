@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import image1 from '../../../images/featured.png';
-import image2 from '../../../images/featured2.png';
 import image3 from '../../../images/featured3.png';
-import image4 from '../../../images/featured4.png';
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -17,14 +15,13 @@ const FeaturedService = () => {
 
     const images = [
         image1,
-        image2,
-        image3,
-        image4,
+        'https://j758s1irpz926ddw14fjwet1-wpengine.netdna-ssl.com/wp-content/uploads/2016/12/blog7.jpg',
+        'https://j758s1irpz926ddw14fjwet1-wpengine.netdna-ssl.com/wp-content/uploads/2016/12/blog3.jpg',
+        'https://j758s1irpz926ddw14fjwet1-wpengine.netdna-ssl.com/wp-content/uploads/2016/12/blog7.jpg',
     ]
 
     const settings = {
         dots: true,
-        // lazyLoad: true,
         fade: true,
         infinite: true,
         speed: 500,
@@ -36,7 +33,7 @@ const FeaturedService = () => {
         pauseOnHover: true,
         // focusOnSelect: true,
         // cssEase: "linear",
-       
+
     };
 
     useEffect(() => {

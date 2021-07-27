@@ -63,10 +63,10 @@ const Login = () => {
         newUserInfo.success = true;
         setUser(newUserInfo);
         setLoggedInUser(newUserInfo);
+        history.replace(from);
         // var credential = result.credential;
         // var user = result.user;
         // var accessToken = credential.accessToken;
-        history.replace(from);
         // console.log(result.user)
       })
       .catch((error) => {
