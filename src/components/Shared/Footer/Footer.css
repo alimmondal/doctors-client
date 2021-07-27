@@ -19,8 +19,16 @@
     background-color: #6ACECE ;
     color:white;
 }
-@media (max-width:768px) {
+
+/* .mobile-view{
+    display: none;
+} */
+
+@media (max-width:960px) {
     .footer-area{
         text-align: center;
+    }
+    .mobile-view{
+        display: none;
     }
 }

@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Subscription = () => {
     return (
         <div>
-            <hr style={{color: '#000'}} />
+            <hr style={{color: '#0fcfec'}} />
             <div  className="text-center">
                 <div className="">
                     <h1> <span className="text-brand">Newsletter</span> Subscription</h1>
